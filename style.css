@@ -1,0 +1,153 @@
+/* I have ZERO idea how to make the .bottom-pane columns work. It was suggested in Slack that I play with flex-grow and flex-shrink, so I found video tutorials, did a google search on the topic, and no matter what I've done, it's not changing. 
+*/
+
+
+body {
+    background-color: #4712f8;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 30px 25px;
+}
+
+.fmlogo {
+    flex-grow: 92;
+    width: 6%;
+}
+
+.fmlogo img {
+    width: 8%;
+}
+
+.sign-in {
+    flex-grow: 1;
+}
+
+.btn-tryforfree {
+    flex-grow: 7;
+}
+
+.button {
+    background-image: linear-gradient(to right, rgb(211, 135, 73), rgb(255, 72, 0));
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 35px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 25px;
+  }
+
+.blank-space {
+    padding: 85px;
+    background-color: #4712f8;
+}
+
+.functional-music {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.top-pane {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+.top-font {
+    font-size: 25px;
+}
+
+#uppercase {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.four-logos {
+    flex: 0 1 400px;
+    width: 75%;
+}
+
+.btn-try5free {
+    flex: 1;
+    margin-top: 20px;
+    padding: 15px 35px;
+    width: 120px;
+    text-align: center;
+}
+
+.img-manatdesk {
+    width: 40%;
+    padding-bottom: 50px;
+}
+
+.see-the-science {
+    padding: 150px;
+    background-color: #4712f8;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Portion that I cannot get to work*/
+
+.botton-pane {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.patented-technology,
+.brain-and-behavior {
+    margin: 0 75px;
+    flex: 1 1 300px;
+}
+
+.img-womanbrainwaves,
+.img-phaselocking {
+    width: 25%;
+    padding-bottom: 5px;
+}
+
+.explore-science-link {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:link {
+    color: whitesmoke;
+  }
+  
+a:visited {
+    color: whitesmoke;
+  }
+  
+a:hover {
+    color: orange;
+  }
+  
+a:active {
+    color: rgb(27, 243, 27);
+  }
