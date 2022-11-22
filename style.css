@@ -1,13 +1,10 @@
-/* I have ZERO idea how to make the .bottom-pane columns work. It was suggested in Slack that I play with flex-grow and flex-shrink, so I found video tutorials, did a google search on the topic, and no matter what I've done, it's not changing. 
-*/
-
-
 body {
     background-color: #4712f8;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     width: 100%;
+    padding-bottom: 25px;
 }
 
 .navigation {
@@ -97,7 +94,7 @@ h1 {
 }
 
 .see-the-science {
-    padding: 150px;
+    padding: 170px;
     background-color: #4712f8;
     font-size: 20px;
     text-align: center;
@@ -106,23 +103,32 @@ h1 {
 
 /*Portion that I cannot get to work*/
 
-.botton-pane {
+.bottom-pane {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    background-color: #4712f8;
 }
 
 .patented-technology,
 .brain-and-behavior {
-    margin: 0 75px;
-    flex: 1 1 300px;
+    margin: 0 100px;
+    flex: 1 1 400px;
+}
+
+.patented-technology {
+    padding: 0 25px 0 175px;
+}
+
+.brain-and-behavior {
+    padding: 0 170px 0 15px;
 }
 
 .img-womanbrainwaves,
 .img-phaselocking {
-    width: 25%;
-    padding-bottom: 5px;
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 .explore-science-link {
